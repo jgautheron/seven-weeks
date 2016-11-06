@@ -3,7 +3,7 @@
 
 fibLoop := method(index,
     fibonacci := list(1, 1)
-    for(i, 0, index - fibonacci size, 
+    for (i, 0, index - fibonacci size, 
         fibonacci append(fibonacci at(i) + fibonacci at(i+1))
     )
     return fibonacci at(index-1)
